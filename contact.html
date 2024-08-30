@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      :root {
+        --background: #081e0d; /* Palm Green */
+        --foreground: #ffffff; /* White for text */
+        --primary: #08ee50; /* Malachite */
+        --highlight: rgba(8, 238, 80, 0.2); /* Malachite highlight for hover */
+        --radius: 0.5rem;
+        --transition-speed: 0.3s;
+      }
+
+      body {
+        background-color: var(--background);
+        font-family: Arial, sans-serif;
+        color: var(--foreground);
+        padding: 20px;
+        transition: background-color var(--transition-speed);
+      }
+
+      .container {
+        background-color: var(--background);
+        padding: 20px;
+        border-radius: var(--radius);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        max-width: 500px;
+        margin: 50px auto 0;
+        transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+      }
+
+      .container:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .header h1 {
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--primary);
+        margin: 0;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links li {
+        display: inline;
+      }
+
+      .nav-links a {
+        color: var(--foreground);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color var(--transition-speed);
+      }
+
+      .nav-links a:hover {
+        color: var(--primary);
+      }
+
+      h1.title {
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--foreground);
+        margin-bottom: 20px;
+        text-align: center;
+        transition: color var(--transition-speed);
+      }
+
+      .info-block {
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: var(--radius);
+        background-color: var(--highlight);
+        transition: background-color var(--transition-speed), transform var(--transition-speed);
+      }
+
+      .info-block:hover {
+        background-color: var(--primary);
+        transform: translateY(-5px);
+      }
+
+      h4 {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: var(--primary);
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 1em;
+        color: var(--foreground);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Bilal Benhamida</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">Àpropos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h1 class="title">Contact Information</h1>
+      <div class="info-block">
+        <h4>Full Name</h4>
+        <p>Bilal Benhamida</p>
+      </div>
+      <div class="info-block">
+        <h4>Email</h4>
+        <p>bilalbenhamida03@gmail.com</p>
+      </div>
+      <div class="info-block">
+        <h4>Phone Number</h4>
+        <p>+212 6 55027314</p>
+      </div>
+      <div class="info-block">
+        <h4>Subject</h4>
+        <p>Website Development Inquiry</p>
+      </div>
+      <div class="info-block">
+        <h4>Your Message</h4>
+        <p>Développeur informatique diplômé en 2024, passionné par la création de sites web. J'aime résoudre des problèmes et travailler sur des solutions innovantes. Fort de mon expérience, je maîtrise les langages de programmation et les frameworks nécessaires. Je suis motivé par l'opportunité de rejoindre votre équipe pour contribuer à des projets passionnants et continuer à évoluer dans ma carrière de développeur.</p>
+      </div>
+    </div>
+  </body>
+</html>

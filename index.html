@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia Roberts - Développeuse Frontend</title>
+    <!-- Inclure Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Styles personnalisés et variables de thème -->
+    <style>
+        :root {
+            --background: 146 6% 6.9%;
+            /* Palm Green */
+            --foreground: 240 10% 3.9%;
+            --primary: 346.8 77.2% 49.8%;
+            /* Ceci peut être remplacé au besoin */
+            --secondary: 240 4.8% 95.9%;
+            --muted: 240 4.8% 95.9%;
+            --accent: 240 4.8% 95.9%;
+            --malachite: 136, 94%, 31%;
+            /* Malachite #08ee50 */
+        }
+
+        body {
+            background-color: #081e0d;
+            /* Palm Green */
+            color: hsl(var(--foreground));
+        }
+
+        .custom-button {
+            background-color: #081e0d;
+            /* Palm Green */
+            border: 2px solid hsl(var(--malachite));
+            color: hsl(var(--malachite));
+        }
+
+        .custom-button:hover {
+            background-color: hsl(var(--malachite));
+            color: #081e0d;
+            /* Palm Green */
+        }
+
+        .custom-paragraph {
+            color: #ffffff;
+        }
+
+        .header {
+            background-color: #081e0d; /* Palm Green */
+            padding: 20px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            color: #08ee50; /* Malachite */
+            font-weight: bold;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: #ffffff; /* Blanc */
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+            text-transform: uppercase; /* Texte en majuscules */
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #08ee50; /* Malachite */
+        }
+
+        /* Ajustements pour petits écrans */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: row; /* Garder les éléments de l'en-tête en ligne */
+                align-items: center;
+            }
+
+            .header h1 {
+                font-size: 20px; /* Taille de police plus petite sur petits écrans */
+                font-weight: bold;
+            }
+
+            .nav-links {
+                flex-wrap: nowrap; /* Empêcher l'enveloppement des liens */
+            }
+
+            .nav-links a {
+                font-size: 14px; /* Taille de police plus petite sur petits écrans */
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Bilal Benhamida</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="hover:text-primary transition duration-300">Accueil</a></li>
+                <li><a href="about.html" class="hover:text-primary transition duration-300">Àpropos</a></li>
+                <li><a href="services.html" class="hover:text-primary transition duration-300">Services</a></li>
+                <li><a href="contact.html" class="hover:text-primary transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container mx-auto flex flex-col md:flex-row justify-center items-center min-h-screen px-4">
+        <main class="md:w-1/2 text-left flex flex-col items-center">
+            <h2 class="text-5xl font-bold text-white text-center">Bonjour, c'est <span style="color: #08ee50;">Bilal</span></h2>
+            <p class="mt-2 text-xl font-semibold text-white text-center">Je suis <span style="color: #08ee50;">Développeurs web</span></p>
+            <p class="mt-2 text-muted-foreground max-w-md custom-paragraph text-center">Développeur informatique diplômé en
+                 2024, passionné par la création de sites web. J'aime résoudre des problèmes et 
+                 travailler sur des solutions innovantes. Fort de mon expérience, je maîtrise les langages
+                  de programmation et les frameworks nécessaires. Je suis motivé par l'opportunité de rejoindre
+                   votre équipe pour contribuer à des projets passionnants 
+                et continuer à évoluer dans ma carrière de développeur.</p>
+
+            <div class="mt-4 flex space-x-4 justify-center">
+                <a href="#" class="custom-button px-6 py-3 rounded-lg shadow transition duration-300">Embaucher</a>
+                <a href="contact.html" class="custom-button px-6 py-3 rounded-lg shadow transition duration-300">Contact</a>
+            </div>
+        </main>
+
+        <div class="mt-6 md:mt-0 md:w-1/2 flex justify-center">
+            <img aria-hidden="true" alt="Portrait d'Olivia" src="image.jpeg"
+                class="rounded-full border-4 border-primary shadow-lg transform hover:scale-105 transition duration-300" />
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer></script>
+</body>
+
+</html>

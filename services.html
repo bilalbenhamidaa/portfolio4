@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #081e0d; /* Palm Green */
+            color: #333;
+        }
+
+        .header {
+            background-color: #081e0d; /* Palm Green */
+            padding: 20px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            color: #08ee50; /* Malachite */
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: #ffffff; /* White */
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+            text-transform: uppercase; /* Uppercase text */
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #08ee50; /* Malachite */
+        }
+
+        .services-section {
+            background-color: #081e0d; /* Palm Green */
+            color: #ffffff;
+            padding: 40px 20px;
+            max-width: 1200px; /* Increased width */
+            margin: 0 auto; /* Center the section */
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 32px;
+            color: #ffffff; /* White */
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap; /* Make the container responsive */
+        }
+
+        .service-card {
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
+            width: 300px; /* Width for larger screens */
+            max-width: 100%; /* Fluid width */
+            height: 350px; /* Height */
+            background-color: #08ee50; /* Malachite */
+            color: #081e0d; /* Palm Green */
+            border: 2px solid transparent; /* Initial transparent border */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center the text vertically */
+            text-align: center; /* Center the text horizontally */
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: #081e0d; /* Palm Green */
+            color: #08ee50; /* Malachite */
+            border-color: #08ee50; /* Change border color on hover */
+        }
+
+        .service-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #08ee50; /* Malachite border */
+            padding-bottom: 8px;
+        }
+
+        .service-description {
+            font-size: 16px;
+            color: #081e0d; /* Palm Green */
+            border-left: 4px solid #08ee50; /* Malachite border */
+            padding-left: 16px;
+            transition: color 0.3s, border-color 0.3s; /* Transition for hover effect */
+        }
+
+        .service-card:hover .service-description {
+            color: #08ee50; /* Malachite */
+            border-color: #081e0d; /* Palm Green */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .service-card {
+                width: 100%; /* Adjust for smaller screens */
+                max-width: 300px; /* Limit width to avoid stretching */
+            }
+
+            .header {
+                flex-direction: row; /* Keep header items in a row */
+                align-items: center;
+            }
+
+            .header h1 {
+                font-size: 20px; /* Smaller font size on small screens */
+                font-weight: bold;
+            }
+
+            .nav-links {
+                flex-wrap: nowrap; /* Prevent wrapping of links */
+            }
+
+            .nav-links a {
+                font-size: 14px; /* Smaller font size on small screens */
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Bilal Benhamida</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">Àpropos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="services-section">
+        <h2 class="section-title">Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3 class="service-title">Project & Database Management</h3>
+                <p class="service-description">Gestion des bases de données SQL et NoSQL (MongoDB) avec maîtrise de la gestion de projet, de l'analyse des besoins, de la conception, de la réalisation, de la validation et de l'hébergement. Utilisation des méthodes agiles, notamment Scrum, pour transformer les besoins clients en produits fonctionnels et adaptés à leurs critères.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3 class="service-title">Frontend Development</h3>
+                <p class="service-description">Un développeur maîtrise HTML, CSS et React en frontend.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3 class="service-title">Backend Development</h3>
+                <p class="service-description">Un développeur maîtrise Laravel pour le développement backend.</p>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #081e0d; /* Palm Green */
+            color: #ffffff; /* White */
+        }
+
+        .header {
+            background-color: #081e0d; /* Palm Green */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            color: #08ee50; /* Malachite */
+            font-size: 26px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: #ffffff; /* White */
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase; /* Uppercase text */
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            color: #08ee50; /* Malachite */
+        }
+
+        .about-section {
+            background-color: #081e0d; /* Palm Green */
+            color: #ffffff; /* White */
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto; /* Center the section */
+            text-align: center;
+            border-bottom: 4px solid #08ee50; /* Malachite */
+        }
+
+        .about-title {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .about-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: #08ee50; /* Malachite */
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .about-description {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #d1d1d1; /* Slightly lighter text */
+            margin-bottom: 40px;
+        }
+
+        .skills-section {
+            background-color: #08ee50; /* Malachite */
+            padding: 60px 20px;
+            color: #081e0d; /* Palm Green */
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .skills-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skills-list li {
+            background-color: #081e0d; /* Palm Green */
+            color: #08ee50; /* Malachite */
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .skills-list li:hover {
+            background-color: #08ee50; /* Malachite */
+            color: #081e0d; /* Palm Green */
+            transform: scale(1.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 22px; /* Smaller font size on small screens */
+            }
+
+            .nav-links a {
+                font-size: 14px; /* Smaller font size on small screens */
+            }
+
+            .about-title {
+                font-size: 32px; /* Smaller font size on small screens */
+            }
+
+            .skills-title {
+                font-size: 26px; /* Smaller font size on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Bilal Benhamida</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">Àpropos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <h2 class="about-title">À propos de moi</h2>
+        <p class="about-description">Je suis Bilal Benhamida, un développeur web passionné avec une expertise en HTML, CSS, React, et Laravel. Fort de plusieurs années d'expérience dans la création de sites web dynamiques et de solutions numériques, j'apporte une approche innovante à chaque projet, en m'assurant que les besoins du client sont au cœur de chaque étape du développement.</p>
+    </section>
+
+    <section class="skills-section">
+        <h2 class="skills-title">Compétences</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Laravel</li>
+            <li>SQL & NoSQL</li>
+            <li>Gestion de Projet</li>
+            <li>Méthodes Agiles (Scrum)</li>
+        </ul>
+    </section>
+</body>
+</html>
